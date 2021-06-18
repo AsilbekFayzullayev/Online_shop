@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="24dp"
+            android:layout_margin="8dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/tvName"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Lorem ipsum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/tvPrice"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text=" 10.0 $"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imMinus"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_minus"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:tint="@color/black" />
+                <TextView
+                    android:id="@+id/tvCount"
+                    android:layout_marginHorizontal="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/imPlus"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_plus"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:tint="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
