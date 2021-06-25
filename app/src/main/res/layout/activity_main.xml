@@ -16,8 +16,8 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:src="@drawable/ic_menu"
-                android:layout_width="24dp"
-                android:layout_height="24dp"/>
+                android:layout_width="26dp"
+                android:layout_height="26dp"/>
             <TextView
                 android:layout_weight="1"
                 android:layout_width="0dp"
