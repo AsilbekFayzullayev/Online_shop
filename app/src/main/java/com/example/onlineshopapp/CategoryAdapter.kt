@@ -41,6 +41,8 @@ class CategoryAdapter(private val items:List<CategoryModel>,private val callback
             else{
                 holder.itemView.cardViewCategory.setCardBackgroundColor(ContextCompat.getColor(holder.itemView.context,R.color.grayOne))
                 holder.itemView.categoryTv.setTextColor(Color.BLACK)
+                holder.itemView.categoryTv.setTextColor(Color.WHITE)
+
             }
 
 
